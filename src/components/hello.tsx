@@ -1,13 +1,21 @@
-import * as React from "react";
+import React, { Component } from 'react'
 import {connect} from 'react-redux'
-import conan from '../conan.gif'
+import Conan from '../conan.gif'
+import {praiseCrom} from "../store/actions"
+import Iframe from 'react-iframe'
+import '../ui.css'
+const mapStateToProps = (state) => ({
+  letsPraiseCrom: state.cromPraised ? '--showArnold' : '--hideArnold'
+})
 
-export interface HelloProps { compiler: string; framework: string; }
+class CromPraisingComponent extends Component {
 
-// 'HelloProps' describes the shape of props.
-// State is never set so we use the '{}' type.
-export class CromPraisingComponent extends React.Component<HelloProps, {}> {
-    render() {
-        return <h1>Hello from {this.props.compiler} and {this.props.framework}!</h1>;
-    }
+  render() {
+    return (
+      <div className="iframe_window">
+        <Iframe url="https://js-dos.com/games/doom.exe.html" width="700px" height="450px" />
+      </div>
+    )
+  }
 }
+export default connect(mapStateToProps)(CromPraisingComponent)

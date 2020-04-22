@@ -3,6 +3,12 @@ body {
   text-align: center;
   margin: 20px;
 }
+.iframe_window {
+  padding: 0px;
+  position: relative;
+  left: -30px;
+  margin: 0px;
+}
 button {
   border-radius: 5px;
   background: white;
