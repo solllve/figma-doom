@@ -1,28 +1,10 @@
-# React
-
-<img src="../_screenshots/webpack.png" width="400" />
-
-Creates rectangles (same as the [Webpack sample plugin][webpack]).
-
-This demonstrates:
-
-- bundling plugin code using Webpack, and
-- using React with TSX.
-
-The main plugin code is in `src/code.ts`. The HTML for the UI is in
-`src/ui.html`, while the embedded JavaScript is in `src/ui.tsx`.
-
-These are compiled to files in `dist/`, which are what Figma will use to run
-your plugin.
-
-To install node modules
-  $ npm install --save-dev @types/your-module @types/your-module
+# React/Redux is temporary. DOOM IS ETERNAL
 
 To build:
-
     $ npm install
     $ npx webpack
-    $ npx webpack --mode=production
+
+<img src="https://media0.giphy.com/media/QDK1pCI43lGhO/giphy.gif?cid=ecf05e47f31decea031bcc512d72415b4038e3a4b9075170&rid=giphy.gif" />
 
 
 [webpack]: ../webpack/
