@@ -1,12 +1,12 @@
 import {createStore} from "redux"
 
 const reducer = (state={
-    cromPraised: false
+    showDoom: true
   }, action) => {
   switch(action.type) {
     case "PRAISE_CROM": {
       return {
-        cromPraised: action.cromPraised
+        showDoom: action.showDoom
       }
     }
   }
